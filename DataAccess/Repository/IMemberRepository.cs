@@ -11,6 +11,9 @@ namespace DataAccess.Repository
     {
         IEnumerable<Member> GetMembers();
 
+        void InsertMember(Member member);
+
+        void UpdateMember(Member member);
         Member GetMailAndPassword(string _Email, string _Password);
     }
 }

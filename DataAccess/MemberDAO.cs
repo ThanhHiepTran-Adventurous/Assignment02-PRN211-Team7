@@ -24,6 +24,37 @@ namespace DataAccess
             return members;
         }
 
+        // Add new member
+        public void AddNew(Member member)
+        {
+            try
+            {
+                using SalesManagementDBContext dbContext = new SalesManagementDBContext();
+                dbContext.Members.Add(member);
+                dbContext.SaveChanges();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        // Add Update member
+        public void Update(Member member)
+        {
+            try
+            {
+                using SalesManagementDBContext dbContext = new SalesManagementDBContext();
+                dbContext.Entry<Member>(member).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                dbContext.SaveChanges();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public Member GetEmailAndPassword(string _Email, string _Password)
         {
             SalesManagementDBContext dbContext = new SalesManagementDBContext();

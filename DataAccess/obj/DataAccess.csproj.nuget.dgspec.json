@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj": {
+    "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\BusinessObject\\obj\\",
+        "projectPath": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\huuta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,21 +86,17 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\huuta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\huuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,8 +110,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\PRN211-Assignment02\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj"
+              "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "C:\\Users\\huuta\\OneDrive\\Desktop\\Assignment02-PRN211-Team7\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
