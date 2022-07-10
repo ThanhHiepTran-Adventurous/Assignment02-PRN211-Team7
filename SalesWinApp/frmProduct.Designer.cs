@@ -54,11 +54,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("VNI-Auchon", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(269, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(435, 50);
+            this.label1.Size = new System.Drawing.Size(534, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "PRODUCT MANAGEMENT";
             // 
@@ -259,6 +259,7 @@
             this.Controls.Add(this.lbProductID);
             this.Controls.Add(this.label1);
             this.Name = "frmProduct";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProduct";
             this.Load += new System.EventHandler(this.frmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();

@@ -197,6 +197,7 @@
             this.Controls.Add(this.lbProductID);
             this.ForeColor = System.Drawing.Color.CadetBlue;
             this.Name = "frmProductDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProductDetail";
             this.ResumeLayout(false);
             this.PerformLayout();

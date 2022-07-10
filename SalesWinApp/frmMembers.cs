@@ -24,7 +24,7 @@ namespace SalesWinApp
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            frmMembersDetail frmMemberDetail = new frmMembersDetail
+            frmMembersDetails frmMemberDetail = new frmMembersDetails
             {
                 Text = "Add a new Members",
                 InsertOrUpdate = false,
@@ -48,7 +48,7 @@ namespace SalesWinApp
 
         private void DgvCarList_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
         {
-            frmMembersDetail frmMemberDetails = new frmMembersDetail
+            frmMembersDetails frmMemberDetails = new frmMembersDetails
             {
                 Text = "Update member",
                 InsertOrUpdate = true,

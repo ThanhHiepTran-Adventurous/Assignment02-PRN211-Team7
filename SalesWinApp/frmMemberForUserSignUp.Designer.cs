@@ -201,6 +201,7 @@
             this.Controls.Add(this.txtMemberId);
             this.Controls.Add(this.lbMemberId);
             this.Name = "frmMemberForUserSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMemberForUserSignUp";
             this.Load += new System.EventHandler(this.frmMemberForUserSignUp_Load);
             this.ResumeLayout(false);
