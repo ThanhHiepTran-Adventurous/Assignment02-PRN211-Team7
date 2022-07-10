@@ -31,17 +31,17 @@
             this.lbMemberID = new System.Windows.Forms.Label();
             this.txtMemberID = new System.Windows.Forms.TextBox();
             this.lbEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbCity = new System.Windows.Forms.Label();
             this.lbCompanyName = new System.Windows.Forms.Label();
             this.lbCountry = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
+            this.txtCompanyName = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
+            this.txtRoleName = new System.Windows.Forms.TextBox();
             this.lbRoleName = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
@@ -78,13 +78,13 @@
             this.lbEmail.TabIndex = 2;
             this.lbEmail.Text = "Email";
             // 
-            // textBox1
+            // txtEmail
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(130, 179);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 34);
-            this.textBox1.TabIndex = 3;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.Location = new System.Drawing.Point(130, 179);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(221, 34);
+            this.txtEmail.TabIndex = 3;
             // 
             // lbCity
             // 
@@ -126,37 +126,37 @@
             this.lbPassword.TabIndex = 7;
             this.lbPassword.Text = "Password";
             // 
-            // textBox2
+            // txtCity
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(130, 232);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 34);
-            this.textBox2.TabIndex = 8;
+            this.txtCity.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCity.Location = new System.Drawing.Point(130, 232);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(221, 34);
+            this.txtCity.TabIndex = 8;
             // 
-            // textBox3
+            // txtCompanyName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(557, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(221, 34);
-            this.textBox3.TabIndex = 9;
+            this.txtCompanyName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCompanyName.Location = new System.Drawing.Point(557, 119);
+            this.txtCompanyName.Name = "txtCompanyName";
+            this.txtCompanyName.Size = new System.Drawing.Size(221, 34);
+            this.txtCompanyName.TabIndex = 9;
             // 
-            // textBox4
+            // txtCountry
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(557, 179);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(221, 34);
-            this.textBox4.TabIndex = 10;
+            this.txtCountry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCountry.Location = new System.Drawing.Point(557, 179);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(221, 34);
+            this.txtCountry.TabIndex = 10;
             // 
-            // textBox5
+            // txtRoleName
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(130, 288);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(221, 34);
-            this.textBox5.TabIndex = 11;
+            this.txtRoleName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtRoleName.Location = new System.Drawing.Point(130, 288);
+            this.txtRoleName.Name = "txtRoleName";
+            this.txtRoleName.Size = new System.Drawing.Size(221, 34);
+            this.txtRoleName.TabIndex = 11;
             // 
             // lbRoleName
             // 
@@ -168,13 +168,13 @@
             this.lbRoleName.TabIndex = 12;
             this.lbRoleName.Text = "RoleName";
             // 
-            // textBox6
+            // txtPassword
             // 
-            this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(557, 229);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(221, 34);
-            this.textBox6.TabIndex = 13;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPassword.Location = new System.Drawing.Point(557, 229);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(221, 34);
+            this.txtPassword.TabIndex = 13;
             // 
             // label1
             // 
@@ -198,6 +198,7 @@
             this.btnNew.TabIndex = 15;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnLoad
             // 
@@ -245,22 +246,23 @@
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lbRoleName);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtRoleName);
+            this.Controls.Add(this.txtCountry);
+            this.Controls.Add(this.txtCompanyName);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbCountry);
             this.Controls.Add(this.lbCompanyName);
             this.Controls.Add(this.lbCity);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.txtMemberID);
             this.Controls.Add(this.lbMemberID);
             this.Name = "frmMembers";
             this.Text = "frmMembers";
+            this.Load += new System.EventHandler(this.frmMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMemberList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,17 +274,17 @@
         private Label lbMemberID;
         private TextBox txtMemberID;
         private Label lbEmail;
-        private TextBox textBox1;
+        private TextBox txtEmail;
         private Label lbCity;
         private Label lbCompanyName;
         private Label lbCountry;
         private Label lbPassword;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtCity;
+        private TextBox txtCompanyName;
+        private TextBox txtCountry;
+        private TextBox txtRoleName;
         private Label lbRoleName;
-        private TextBox textBox6;
+        private TextBox txtPassword;
         private Label label1;
         private Button btnNew;
         private Button btnLoad;
