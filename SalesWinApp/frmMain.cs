@@ -76,5 +76,13 @@ namespace SalesWinApp
             childFormProducts.Dock = DockStyle.Fill;
             childFormProducts.Show();
         }
+
+        private void tlsManageOrder_Click(object sender, EventArgs e)
+        {
+            frmOrders childFormOrders = new frmOrders();
+            childFormOrders.MdiParent = this;
+            childFormOrders.Dock = DockStyle.Fill;
+            childFormOrders.Show();
+        }
     }
 }

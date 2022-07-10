@@ -12,6 +12,8 @@ namespace SalesWinApp
 {
     public partial class frmOrderProduct : Form
     {
+
+        public int OrderId { get; set; }
         public frmOrderProduct()
         {
             InitializeComponent();

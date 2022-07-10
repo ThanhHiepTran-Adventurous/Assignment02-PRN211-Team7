@@ -79,6 +79,7 @@
             this.tlsManageOrder.Name = "tlsManageOrder";
             this.tlsManageOrder.Size = new System.Drawing.Size(224, 26);
             this.tlsManageOrder.Text = "&Order";
+            this.tlsManageOrder.Click += new System.EventHandler(this.tlsManageOrder_Click);
             // 
             // systemsToolStripMenuItem
             // 

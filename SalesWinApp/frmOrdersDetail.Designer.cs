@@ -185,6 +185,7 @@
             this.Name = "frmOrdersDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrdersDetail";
+            this.Load += new System.EventHandler(this.frmOrdersDetail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -25,7 +25,7 @@ namespace BusinessObject.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server =(local); database = SalesManagementDB;TrustServerCertificate=True;Trusted_Connection=True;uid=sa;pwd=1010;");
+                optionsBuilder.UseSqlServer("server =DESKTOP-O7JQGLD\\THANHHIEP; database = SalesManagementDB;TrustServerCertificate=True;Trusted_Connection=True;uid=sa;pwd=123456789;");
             }
         }
 
