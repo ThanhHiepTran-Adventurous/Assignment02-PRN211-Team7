@@ -18,8 +18,8 @@ namespace SalesWinApp
         {
             var adminLogin = Program.Configuration.GetSection("AdminAccount").Get<Member>();
 
-            //string Email = adminLogin.Email;
-            //string Password = adminLogin.Password;
+            string Email = adminLogin.Email;
+            string Password = adminLogin.Password;
 
             string _Email, _Password;
             _Email = txtEmail.Text;
@@ -27,15 +27,15 @@ namespace SalesWinApp
 
             Member check = mem.GetMailAndPassword(_Email, _Password);   
 
-            //if (Email.Equals(_Email) && Password.Equals(_Password))
-            //{
+            if (Email.Equals(_Email) && Password.Equals(_Password))
+            {
 
-            //    MessageBox.Show("Wellcome to admin!");
-            //    frmMain frmMain = new frmMain();
-            //    frmMain.user = adminLogin;
-            //    frmMain.Show();
-            //    this.Hide();
-            //}
+                MessageBox.Show("Wellcome to admin!");
+                frmMain frmMain = new frmMain();
+                frmMain.user = adminLogin;
+                frmMain.Show();
+                this.Hide();
+            }
             if (check == null)
             {
                 MessageBox.Show("Invalid");
@@ -66,6 +66,11 @@ namespace SalesWinApp
             {
                 btnLogin_Click(sender, e);
             }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

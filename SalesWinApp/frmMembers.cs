@@ -35,21 +35,26 @@ namespace SalesWinApp
 
         private void DgvCarList_CellDoubleClick(object? sender, DataGridViewCellEventArgs e)
         {
-            //frmMembersDetail frmMemberDetails = new frmMembersDetail
-            //{
-            //    Text = "Update member",
-            //    InsertOrUpdate = true,
-            //    MemberInfo = GetMemberObject(),
-            //    MemberRepository = memberRepository
+            frmMembersDetail frmMemberDetails = new frmMembersDetail
+            {
+                Text = "Update member",
+           //     InsertOrUpdate = true,
+         //       MemberInfo = GetMemberObject(),
+         //       MemberRepository = memberRepository
 
-            //};
-            //if (frmMemberDetails.ShowDialog() == DialogResult.OK)
-            //{
-            //    LoadMemberList();
-            //    //set focus member update
-            //    source.Position = source.Count - 1;
-            //}
-            //LoadMemberList();
+            };
+            if (frmMemberDetails.ShowDialog() == DialogResult.OK)
+            {
+                LoadMemberList();
+                //set focus member update
+                source.Position = source.Count - 1;
+            }
+            LoadMemberList();
+        }
+
+        private void LoadMemberList()
+        {
+            
         }
 
         private Member GetMemberObject()

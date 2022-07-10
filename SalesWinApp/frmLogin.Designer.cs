@@ -119,6 +119,7 @@
             this.btnSignUp.Text = "SignUp";
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnClose
             // 
@@ -148,7 +149,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmLogin";
-            this.Text = "Form1";
+            this.Text = "formLogin";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
