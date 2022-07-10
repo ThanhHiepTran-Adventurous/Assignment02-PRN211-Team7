@@ -1,6 +1,6 @@
 ﻿namespace SalesWinApp
 {
-    partial class frmMembersDetail
+    partial class frmMembersDetails
     {
         /// <summary>
         /// Required designer variable.

@@ -13,9 +13,9 @@ using DataAccess.Repository;
 
 namespace SalesWinApp
 {
-    public partial class frmMembersDetail : Form
+    public partial class frmMembersDetails : Form
     {
-        public frmMembersDetail()
+        public frmMembersDetails()
         {
             InitializeComponent();
         }

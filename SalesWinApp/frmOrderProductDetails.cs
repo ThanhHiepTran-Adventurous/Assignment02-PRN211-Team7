@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SalesWinApp
 {
-    public partial class frmOrderProductDetail : Form
+    public partial class frmOrderProductDetails : Form
     {
-        public frmOrderProductDetail()
+        public frmOrderProductDetails()
         {
             InitializeComponent();
         }
