@@ -16,5 +16,7 @@ namespace DataAccess.Repository
         void UpdateProduct(Product product);
 
         void DeleteProduct(int productId);
+
+
     }
 }

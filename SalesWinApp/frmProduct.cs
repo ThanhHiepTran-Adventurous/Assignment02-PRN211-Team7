@@ -157,5 +157,71 @@ namespace SalesWinApp
                 MessageBox.Show(ex.Message, "Delete a product!");
             }
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            var products = ((ProductRepository)productRepository).Searching(cbKeySearch.Text, txtKeyWord.Text);
+            if (products != null && products.Count() > 0)
+            {
+                LoadDataGivView(products);
+            }
+            else
+            {
+                MessageBox.Show("No result found!!!!");
+            }
+        }
+
+        private void LoadDataGivView(IEnumerable<Product> products)
+        {
+            try
+            {
+                source = new BindingSource();
+                source.DataSource = products;
+
+                txtProductID.DataBindings.Clear();
+                txtCategoryID.DataBindings.Clear();
+                txtProductName.DataBindings.Clear();
+                txtUnitPrice.DataBindings.Clear();
+                txtUnitStock.DataBindings.Clear();
+                txtWeight.DataBindings.Clear();
+
+                txtProductID.DataBindings.Add("Text", source, "ProductId");
+                txtCategoryID.DataBindings.Add("Text", source, "CategoryId");
+                txtProductName.DataBindings.Add("Text", source, "ProductName");
+                txtUnitPrice.DataBindings.Add("Text", source, "UnitPrice");
+                txtUnitStock.DataBindings.Add("Text", source, "UnitslnStock");
+                txtWeight.DataBindings.Add("Text", source, "Weight");
+
+                dgvProduct.DataSource = null;
+                dgvProduct.DataSource = source;
+                this.dgvProduct.Columns["OrderDetails"].Visible = false;
+                this.dgvProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+
+                if (products.Count() == 0)
+                {
+                    ClearText();
+                    btnDelete.Enabled = false;
+                }
+                else
+                {
+                    btnDelete.Enabled = true;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Load product list");
+            }
+        }
+
+        private void ClearText()
+        {
+            txtProductID.Text = string.Empty;
+            txtProductName.Text = string.Empty;
+            txtCategoryID.Text = string.Empty;
+            txtWeight.Text = string.Empty;
+            txtUnitPrice.Text = string.Empty;
+            txtUnitStock.Text = string.Empty;
+        }
     }
 }

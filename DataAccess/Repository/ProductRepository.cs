@@ -17,6 +17,6 @@ namespace DataAccess.Repository
 
         public void DeleteProduct(int productId) => ProductDAO.Instance.DeleteProduct(productId);
 
-
+        public IEnumerable<Product> Searching(string searchBy, string keyword) => ProductDAO.Instance.SearchProducts(searchBy, keyword);
     }
 }

@@ -204,6 +204,11 @@
             // cbKeySearch
             // 
             this.cbKeySearch.FormattingEnabled = true;
+            this.cbKeySearch.Items.AddRange(new object[] {
+            "Product ID",
+            "Product Name",
+            "Unit Price",
+            "Unit In Stock"});
             this.cbKeySearch.Location = new System.Drawing.Point(214, 357);
             this.cbKeySearch.Name = "cbKeySearch";
             this.cbKeySearch.Size = new System.Drawing.Size(151, 28);
@@ -225,6 +230,7 @@
             this.btnSearch.TabIndex = 19;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // frmProduct
             // 

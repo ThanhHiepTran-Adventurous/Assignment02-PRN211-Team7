@@ -32,6 +32,33 @@ namespace DataAccess
                 }
             }
         }
+
+        public IEnumerable<Product> SearchProducts(string searchBy, string keyword)
+        {
+            using (SalesManagementDBContext dbContext = new SalesManagementDBContext())
+            {
+
+                switch (searchBy)
+                {
+                    case "Product Name":
+                        return dbContext.Products.Where(p => p.ProductName.Contains(keyword)).ToList();
+                        break;
+                    case "Product ID":
+                        return dbContext.Products.Where(p => p.ProductId == int.Parse(keyword)).ToList();
+                        break;
+                    case "Unit In Stock":
+                        return dbContext.Products.Where(p => p.UnitslnStock == int.Parse(keyword)).ToList();
+                        break;
+                    case "Unit Price":
+                        return dbContext.Products.Where(p => p.UnitPrice == decimal.Parse(keyword)).ToList();
+                        break;
+                    default:
+                        return null;
+                        break;
+                }
+            }
+        }
+
         //--------------------------------------
 
         public void AddProduct(Product product)
