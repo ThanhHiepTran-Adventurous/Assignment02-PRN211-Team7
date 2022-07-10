@@ -140,6 +140,7 @@
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
@@ -150,7 +151,7 @@
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
-            // frmOrderProductDetail
+            // frmOrderProductDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,7 +169,7 @@
             this.Controls.Add(this.lbUnitPrice);
             this.Controls.Add(this.lbProductId);
             this.Controls.Add(this.lbOrderId);
-            this.Name = "frmOrderProductDetail";
+            this.Name = "frmOrderProductDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrderProductDetail";
             this.ResumeLayout(false);

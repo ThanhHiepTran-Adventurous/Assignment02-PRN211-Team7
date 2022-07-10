@@ -86,17 +86,55 @@ namespace SalesWinApp
 
         private void btnAddOrderDetail_Click(object sender, EventArgs e)
         {
-
+            frmOrderProductDetails frm = new frmOrderProductDetails
+            {
+                orderId = this.OrderId,
+                Text = "Add Order",
+                InsertOrUpdate = false,
+                //  OrderDetailInfo = GetDetailObject(),
+                OrderDetailRepository = this.OrderDetailRepository
+            };
+            frm.ShowDialog();
+            var orders = OrderDetailRepository.getOrderDetail(OrderId);
+            LoadOrderDetailList(orders);
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            var detail = GetDetailObject();
+            if (detail == null)
+            {
+                MessageBox.Show("No Order Detail you want to update!");
+            }
+            else
+            {
+                frmOrderProductDetails frm = new frmOrderProductDetails
+                {
+                    orderId = this.OrderId,
+                    Text = "Update order detail",
+                    InsertOrUpdate = true,
+                    OrderDetailInfo = GetDetailObject(),
+                    OrderDetailRepository = this.OrderDetailRepository
+                };
+                frm.ShowDialog();
+                var orders = OrderDetailRepository.getOrderDetail(OrderId);
+                LoadOrderDetailList(orders);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            var detail = GetDetailObject();
+            if (detail == null)
+            {
+                MessageBox.Show("No Order Detail you want to remove!!!!");
+            }
+            else
+            {
+                OrderDetailRepository.DeleteDetail(detail.OrderId, detail.ProductId);
+                var details = OrderDetailRepository.getOrderDetail(OrderId);
+                LoadOrderDetailList(details);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
