@@ -1,0 +1,11 @@
+{
+  "ConnectionString": {
+    "MyManagementMemberDB": "Server=(local);uid=sa;pwd=1010;database=SalesManagementDB;TrustServerCertificate=True"
+  },
+
+  "AdminAccount": {
+    "Email": "admin@fstore.com",
+    "Password": "admin@@",
+    "RoleName": "Admin"
+  }
+}
