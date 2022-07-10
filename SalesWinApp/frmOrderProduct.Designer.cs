@@ -54,6 +54,7 @@
             this.btnDelete.TabIndex = 28;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -63,6 +64,7 @@
             this.btnUpdate.TabIndex = 27;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCancel
             // 
@@ -72,6 +74,7 @@
             this.btnCancel.TabIndex = 26;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAddOrderDetail
             // 
@@ -81,6 +84,7 @@
             this.btnAddOrderDetail.TabIndex = 25;
             this.btnAddOrderDetail.Text = "&Add";
             this.btnAddOrderDetail.UseVisualStyleBackColor = true;
+            this.btnAddOrderDetail.Click += new System.EventHandler(this.btnAddOrderDetail_Click);
             // 
             // txtDiscount
             // 
@@ -206,6 +210,7 @@
             this.Name = "frmOrderProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrderProduct";
+            this.Load += new System.EventHandler(this.frmOrderProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderDetailList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
