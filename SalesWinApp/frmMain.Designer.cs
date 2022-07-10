@@ -63,20 +63,20 @@
             // tlsManageMember
             // 
             this.tlsManageMember.Name = "tlsManageMember";
-            this.tlsManageMember.Size = new System.Drawing.Size(224, 26);
+            this.tlsManageMember.Size = new System.Drawing.Size(148, 26);
             this.tlsManageMember.Text = "&Member";
             this.tlsManageMember.Click += new System.EventHandler(this.tlsManageMember_Click);
             // 
             // tlsManageProduct
             // 
             this.tlsManageProduct.Name = "tlsManageProduct";
-            this.tlsManageProduct.Size = new System.Drawing.Size(224, 26);
+            this.tlsManageProduct.Size = new System.Drawing.Size(148, 26);
             this.tlsManageProduct.Text = "&Product";
             // 
             // tlsManageOrder
             // 
             this.tlsManageOrder.Name = "tlsManageOrder";
-            this.tlsManageOrder.Size = new System.Drawing.Size(224, 26);
+            this.tlsManageOrder.Size = new System.Drawing.Size(148, 26);
             this.tlsManageOrder.Text = "&Order";
             // 
             // systemsToolStripMenuItem
@@ -90,7 +90,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(128, 26);
             this.closeToolStripMenuItem.Text = "&Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -101,6 +101,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);

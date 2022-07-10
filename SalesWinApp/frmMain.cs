@@ -14,7 +14,6 @@ namespace SalesWinApp
     public partial class frmMain : Form
     {
 
-
         bool check;
 
         public Member user { get; set; }
@@ -53,9 +52,9 @@ namespace SalesWinApp
                 // IsMdiContainer = true;
                 frmMemberForUserSignUp childForm = new frmMemberForUserSignUp
                 {
-           //         user = user,
-           //         mainForm = this,
-           //         InsertOrUpdate = true
+                    user = user,
+                    mainForm = this,
+                    InsertOrUpdate = true
                 };
                 //     childForm.MdiParent = this;
                 //    childForm.Dock = DockStyle.Fill;

@@ -36,7 +36,7 @@ namespace SalesWinApp
                 frmMain.Show();
                 this.Hide();
             }
-            if (check == null)
+            else if (check == null)
             {
                 MessageBox.Show("Invalid");
             }
@@ -70,7 +70,13 @@ namespace SalesWinApp
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
+            frmMemberForUserSignUp signUpFrm = new frmMemberForUserSignUp
+            {
+                user = null,
+                mainForm = null,
+                InsertOrUpdate = false
+            };
+            signUpFrm.ShowDialog();
         }
     }
 }

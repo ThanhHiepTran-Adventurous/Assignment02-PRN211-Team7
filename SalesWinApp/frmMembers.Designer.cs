@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lbMemberID = new System.Windows.Forms.Label();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
+            this.txtMemberId = new System.Windows.Forms.TextBox();
             this.lbEmail = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbCity = new System.Windows.Forms.Label();
@@ -60,13 +60,13 @@
             this.lbMemberID.TabIndex = 0;
             this.lbMemberID.Text = "MemberID";
             // 
-            // txtMemberID
+            // txtMemberId
             // 
-            this.txtMemberID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtMemberID.Location = new System.Drawing.Point(130, 119);
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(221, 34);
-            this.txtMemberID.TabIndex = 1;
+            this.txtMemberId.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMemberId.Location = new System.Drawing.Point(130, 119);
+            this.txtMemberId.Name = "txtMemberId";
+            this.txtMemberId.Size = new System.Drawing.Size(221, 34);
+            this.txtMemberId.TabIndex = 1;
             // 
             // lbEmail
             // 
@@ -100,7 +100,7 @@
             // 
             this.lbCompanyName.AutoSize = true;
             this.lbCompanyName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCompanyName.Location = new System.Drawing.Point(395, 119);
+            this.lbCompanyName.Location = new System.Drawing.Point(511, 115);
             this.lbCompanyName.Name = "lbCompanyName";
             this.lbCompanyName.Size = new System.Drawing.Size(156, 28);
             this.lbCompanyName.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             this.lbCountry.AutoSize = true;
             this.lbCountry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbCountry.Location = new System.Drawing.Point(407, 179);
+            this.lbCountry.Location = new System.Drawing.Point(511, 182);
             this.lbCountry.Name = "lbCountry";
             this.lbCountry.Size = new System.Drawing.Size(88, 28);
             this.lbCountry.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbPassword.Location = new System.Drawing.Point(407, 235);
+            this.lbPassword.Location = new System.Drawing.Point(511, 238);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(101, 28);
             this.lbPassword.TabIndex = 7;
@@ -137,7 +137,7 @@
             // txtCompanyName
             // 
             this.txtCompanyName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCompanyName.Location = new System.Drawing.Point(557, 119);
+            this.txtCompanyName.Location = new System.Drawing.Point(711, 115);
             this.txtCompanyName.Name = "txtCompanyName";
             this.txtCompanyName.Size = new System.Drawing.Size(221, 34);
             this.txtCompanyName.TabIndex = 9;
@@ -145,7 +145,7 @@
             // txtCountry
             // 
             this.txtCountry.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCountry.Location = new System.Drawing.Point(557, 179);
+            this.txtCountry.Location = new System.Drawing.Point(711, 176);
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Size = new System.Drawing.Size(221, 34);
             this.txtCountry.TabIndex = 10;
@@ -171,7 +171,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPassword.Location = new System.Drawing.Point(557, 229);
+            this.txtPassword.Location = new System.Drawing.Point(711, 232);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(221, 34);
             this.txtPassword.TabIndex = 13;
@@ -211,6 +211,7 @@
             this.btnLoad.TabIndex = 16;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnDelete
             // 
@@ -223,6 +224,7 @@
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dgvMemberList
             // 
@@ -258,9 +260,10 @@
             this.Controls.Add(this.lbCity);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lbEmail);
-            this.Controls.Add(this.txtMemberID);
+            this.Controls.Add(this.txtMemberId);
             this.Controls.Add(this.lbMemberID);
             this.Name = "frmMembers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMembers";
             this.Load += new System.EventHandler(this.frmMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMemberList)).EndInit();
@@ -272,7 +275,7 @@
         #endregion
 
         private Label lbMemberID;
-        private TextBox txtMemberID;
+        private TextBox txtMemberId;
         private Label lbEmail;
         private TextBox txtEmail;
         private Label lbCity;

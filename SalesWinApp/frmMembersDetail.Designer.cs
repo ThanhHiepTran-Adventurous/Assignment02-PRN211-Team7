@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.txtMemberId = new System.Windows.Forms.TextBox();
-            this.txEmail = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtRoleName = new System.Windows.Forms.TextBox();
             this.txtCompanyName = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
@@ -53,12 +53,12 @@
             this.txtMemberId.Size = new System.Drawing.Size(260, 27);
             this.txtMemberId.TabIndex = 0;
             // 
-            // txEmail
+            // txtEmail
             // 
-            this.txEmail.Location = new System.Drawing.Point(166, 133);
-            this.txEmail.Name = "txEmail";
-            this.txEmail.Size = new System.Drawing.Size(260, 27);
-            this.txEmail.TabIndex = 1;
+            this.txtEmail.Location = new System.Drawing.Point(166, 133);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(260, 27);
+            this.txtEmail.TabIndex = 1;
             // 
             // txtRoleName
             // 
@@ -164,7 +164,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 29);
             this.btnSave.TabIndex = 14;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -174,7 +174,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(94, 29);
             this.btnClose.TabIndex = 15;
-            this.btnClose.Text = "Close";
+            this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -182,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1222, 547);
+            this.ClientSize = new System.Drawing.Size(1222, 475);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lbPassword);
@@ -197,10 +197,12 @@
             this.Controls.Add(this.txtCity);
             this.Controls.Add(this.txtCompanyName);
             this.Controls.Add(this.txtRoleName);
-            this.Controls.Add(this.txEmail);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtMemberId);
             this.Name = "frmMembersDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMembersDetail";
+            this.Load += new System.EventHandler(this.frmMembersDetail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +211,7 @@
         #endregion
 
         private TextBox txtMemberId;
-        private TextBox txEmail;
+        private TextBox txtEmail;
         private TextBox txtRoleName;
         private TextBox txtCompanyName;
         private TextBox txtCity;
