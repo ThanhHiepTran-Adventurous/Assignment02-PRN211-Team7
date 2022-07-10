@@ -63,20 +63,21 @@
             // tlsManageMember
             // 
             this.tlsManageMember.Name = "tlsManageMember";
-            this.tlsManageMember.Size = new System.Drawing.Size(148, 26);
+            this.tlsManageMember.Size = new System.Drawing.Size(224, 26);
             this.tlsManageMember.Text = "&Member";
             this.tlsManageMember.Click += new System.EventHandler(this.tlsManageMember_Click);
             // 
             // tlsManageProduct
             // 
             this.tlsManageProduct.Name = "tlsManageProduct";
-            this.tlsManageProduct.Size = new System.Drawing.Size(148, 26);
+            this.tlsManageProduct.Size = new System.Drawing.Size(224, 26);
             this.tlsManageProduct.Text = "&Product";
+            this.tlsManageProduct.Click += new System.EventHandler(this.tlsManageProduct_Click);
             // 
             // tlsManageOrder
             // 
             this.tlsManageOrder.Name = "tlsManageOrder";
-            this.tlsManageOrder.Size = new System.Drawing.Size(148, 26);
+            this.tlsManageOrder.Size = new System.Drawing.Size(224, 26);
             this.tlsManageOrder.Text = "&Order";
             // 
             // systemsToolStripMenuItem

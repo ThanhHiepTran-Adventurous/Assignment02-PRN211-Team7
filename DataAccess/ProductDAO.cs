@@ -69,7 +69,7 @@ namespace DataAccess
             {
                 SalesManagementDBContext productDBContext = new SalesManagementDBContext();
 
-                var product = productDBContext.Products.SingleOrDefault(products => products.ProductId == proudctId);
+                var product = productDBContext.Products.SingleOrDefault(products => products.ProductId == productId);
                 if (product != null)
                 {
                     productDBContext.Remove(product);

@@ -68,5 +68,13 @@ namespace SalesWinApp
                 childFormMembers.Show();
             }
         }
+
+        private void tlsManageProduct_Click(object sender, EventArgs e)
+        {
+            frmProduct childFormProducts = new frmProduct();
+            childFormProducts.MdiParent = this;
+            childFormProducts.Dock = DockStyle.Fill;
+            childFormProducts.Show();
+        }
     }
 }

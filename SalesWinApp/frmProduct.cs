@@ -122,5 +122,40 @@ namespace SalesWinApp
             txtUnitStock.Text = string.Empty;
         }
 
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            LoadProductsList();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmProductDetail frmProductsDetails = new frmProductDetail
+            {
+                Text = "Add a new Products",
+                InsertOrUpdate = false,
+                ProductRepository = productRepository
+            };
+            if (frmProductsDetails.ShowDialog() == DialogResult.OK)
+            {
+                LoadProductsList();
+                source.Position = source.Count - 1;
+            }
+            LoadProductsList();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var pro = GetProductObject();
+                productRepository.DeleteProduct(pro.ProductId);
+                MessageBox.Show("Delete successfuly");
+                LoadProductsList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Delete a product!");
+            }
+        }
     }
 }
