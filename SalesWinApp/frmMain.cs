@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DataAccess.Repository;
 namespace SalesWinApp
 {
     public partial class frmMain : Form
@@ -17,7 +17,7 @@ namespace SalesWinApp
         bool check;
 
         public Member user { get; set; }
-       // IOrderRepository order = new OrderRepository();
+        IOrderRepository order = new OrderRepository();
         public frmMain()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace SalesWinApp
             {
                // createReportSalesToolStripMenuItem.Enabled = false;
                 tlsManageProduct.Visible = false;
-                //    tlsManageOrder.Visible = false;
+            //  tlsManageOrder.Visible = false;
                 check = true;
                 MessageBox.Show("Is member " + user.RoleName + " Member Name " + user.Email);
             }
@@ -79,10 +79,27 @@ namespace SalesWinApp
 
         private void tlsManageOrder_Click(object sender, EventArgs e)
         {
-            frmOrders childFormOrders = new frmOrders();
-            childFormOrders.MdiParent = this;
-            childFormOrders.Dock = DockStyle.Fill;
-            childFormOrders.Show();
+            if (check == true)
+            {
+                //  IsMdiContainer = true;
+                frmOrdersForUser childForm = new frmOrdersForUser
+                {
+                    user = user,
+                    userOrder = order.GetOrderByMemberId(user.MemberId),
+                    frmMain = this,
+                    //InsertOrUpdate = true
+                };
+                //   childForm.MdiParent = this;
+                // childForm.Dock = DockStyle.Fill;
+                childForm.Show();
+            }
+            else
+            {
+                frmOrders childFormOrders = new frmOrders();
+                childFormOrders.MdiParent = this;
+                childFormOrders.Dock = DockStyle.Fill;
+                childFormOrders.Show();
+            }
         }
     }
 }

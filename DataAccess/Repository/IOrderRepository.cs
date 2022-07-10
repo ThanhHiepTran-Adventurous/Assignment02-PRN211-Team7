@@ -20,5 +20,8 @@ namespace DataAccess.Repository
         void DeleteOrder(int orderId);
 
         Order GetOrderByMemberId(int memberId);
+
+
+        IEnumerable<Order>? getOrderDetail(int memberId);
     }
 }

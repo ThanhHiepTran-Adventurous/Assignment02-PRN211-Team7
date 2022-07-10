@@ -149,6 +149,7 @@
             this.dgvOrderListForUs.RowTemplate.Height = 29;
             this.dgvOrderListForUs.Size = new System.Drawing.Size(1036, 205);
             this.dgvOrderListForUs.TabIndex = 12;
+            this.dgvOrderListForUs.DataSourceChanged += new System.EventHandler(this.dgvOrderListForUs_DataSourceChanged);
             // 
             // frmOrdersForUser
             // 
@@ -171,6 +172,7 @@
             this.Name = "frmOrdersForUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrdersForUser";
+            this.Load += new System.EventHandler(this.frmOrdersForUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderListForUs)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

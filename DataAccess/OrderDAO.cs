@@ -104,5 +104,19 @@ namespace DataAccess
             Order? order = dBContext.Orders.Where(order => order.MemberId == memberId).FirstOrDefault();
             return order;
         }
+
+
+        //Lấy list các order bằng memberId
+        public IEnumerable<Order> GetOrderListByMemId(int memberId)
+        {
+            using SalesManagementDBContext dBContext = new SalesManagementDBContext();
+            var order = dBContext.Orders.Where(order => order.MemberId == memberId).ToList();
+            if(order.Count > 0)
+            {
+                return order;
+            }
+            return null;
+        }
+
     }
 }

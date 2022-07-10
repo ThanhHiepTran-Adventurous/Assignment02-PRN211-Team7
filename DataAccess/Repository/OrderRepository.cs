@@ -25,5 +25,8 @@ namespace DataAccess.Repository
         {
             return OrderDAO.Instance.GetOrderByMemberId(memberId);
         }
+
+
+        public IEnumerable<Order>? getOrderDetail(int memberId) => OrderDAO.Instance.GetOrderListByMemId(memberId);
     }
 }
