@@ -13,6 +13,9 @@ namespace SalesWinApp
     public partial class frmOrderProduct : Form
     {
 
+
+        IOrderDetailRepository OrderDetailRepository = new OrderDetailRepository();
+
         public int OrderId { get; set; }
         public frmOrderProduct()
         {
