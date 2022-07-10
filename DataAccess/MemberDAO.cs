@@ -55,6 +55,36 @@ namespace DataAccess
             }
         }
 
+
+        public void Remove(int memberId)
+        {
+            Console.WriteLine($"member ID {memberId}");
+            try
+            {
+                using SalesManagementDBContext dBContext = new SalesManagementDBContext();
+
+                var member = dBContext.Members.SingleOrDefault(members => members.MemberId == memberId);
+                //   Console.WriteLine("Lay ra được một member: "  + member);
+                if (member != null)
+
+                {
+                    //     Console.WriteLine("toi dung trc ham remove" + member);
+                    //  dBContext.Attach(member);
+                    dBContext.Remove(member);
+                    //   Console.WriteLine("Da xoa mot member");
+
+                    dBContext.SaveChanges();
+                    // Console.WriteLine("Da luu xuong dataabase");
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public Member GetEmailAndPassword(string _Email, string _Password)
         {
             SalesManagementDBContext dbContext = new SalesManagementDBContext();
