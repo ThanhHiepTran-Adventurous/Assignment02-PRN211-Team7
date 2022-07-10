@@ -150,6 +150,7 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmOrderProductDetails
             // 
@@ -172,6 +173,7 @@
             this.Name = "frmOrderProductDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrderProductDetail";
+            this.Load += new System.EventHandler(this.frmOrderProductDetails_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

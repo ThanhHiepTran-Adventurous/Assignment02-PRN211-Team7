@@ -88,7 +88,7 @@ namespace SalesWinApp
         {
             frmOrderProductDetails frm = new frmOrderProductDetails
             {
-                orderId = this.OrderId,
+                orderId  = this.OrderId,
                 Text = "Add Order",
                 InsertOrUpdate = false,
                 //  OrderDetailInfo = GetDetailObject(),

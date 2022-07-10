@@ -18,5 +18,10 @@ namespace BusinessObject.Models
         public int UnitslnStock { get; set; }
 
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+
+        public override string ToString()
+        {
+            return ProductName;
+        }
     }
 }

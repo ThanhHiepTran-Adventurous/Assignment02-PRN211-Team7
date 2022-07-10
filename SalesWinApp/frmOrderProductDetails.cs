@@ -69,5 +69,63 @@ namespace SalesWinApp
                 MessageBox.Show(ex.Message, "Insert");
             }
         }
+
+        private void Form1_KeyDown(object? sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnSave_Click(sender, e);
+            }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Close form");
+            }
+        }
+
+        private void frmOrderProductDetails_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+            this.KeyDown += Form1_KeyDown;
+            ProductRepository productRepository = new ProductRepository();
+            var products = productRepository.GetProduct();
+            //  var productsV2 = productRepository.GetProductsBy("general");
+            txtOrderId.Text = orderId.ToString();
+
+            //  cbxProductChoice.Text = OrderDetailInfo.ProductId.ToString();
+            // OrderDetailInfo.ProductId.ToString();
+            foreach (Product product in products)
+            {
+
+                cbxProductChoice.Items.Add(product);
+            }
+            txtOrderId.Enabled = false;
+
+            if (InsertOrUpdate == true)
+            {
+                cbxProductChoice.Enabled = false;
+
+                int numberOfItem = cbxProductChoice.Items.Count;
+                for (int i = 0; i < numberOfItem; i++)
+                {
+                    Product product = (Product)cbxProductChoice.Items[i];
+                    if (product.ProductId == OrderDetailInfo.ProductId)
+                    {
+                        cbxProductChoice.SelectedIndex = i;
+                    }
+                }
+                // cbxProductChoice.Text = OrderDetailInfo.ProductId.ToString();
+                txtUnitPrice.Text = OrderDetailInfo.UnitPrice.ToString();
+                txtQuantity.Text = OrderDetailInfo.Quantity.ToString();
+                txtDiscount.Text = OrderDetailInfo.Discount.ToString();
+            }
+        }
     }
 }
