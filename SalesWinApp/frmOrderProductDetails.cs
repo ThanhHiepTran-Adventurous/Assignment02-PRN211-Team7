@@ -96,11 +96,8 @@ namespace SalesWinApp
             this.KeyDown += Form1_KeyDown;
             ProductRepository productRepository = new ProductRepository();
             var products = productRepository.GetProduct();
-            //  var productsV2 = productRepository.GetProductsBy("general");
             txtOrderId.Text = orderId.ToString();
 
-            //  cbxProductChoice.Text = OrderDetailInfo.ProductId.ToString();
-            // OrderDetailInfo.ProductId.ToString();
             foreach (Product product in products)
             {
 
@@ -121,7 +118,6 @@ namespace SalesWinApp
                         cbxProductChoice.SelectedIndex = i;
                     }
                 }
-                // cbxProductChoice.Text = OrderDetailInfo.ProductId.ToString();
                 txtUnitPrice.Text = OrderDetailInfo.UnitPrice.ToString();
                 txtQuantity.Text = OrderDetailInfo.Quantity.ToString();
                 txtDiscount.Text = OrderDetailInfo.Discount.ToString();

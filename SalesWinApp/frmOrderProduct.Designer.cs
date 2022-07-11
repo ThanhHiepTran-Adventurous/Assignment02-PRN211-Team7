@@ -48,42 +48,46 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDelete.Location = new System.Drawing.Point(728, 149);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(94, 29);
+            this.btnDelete.Size = new System.Drawing.Size(94, 40);
             this.btnDelete.TabIndex = 28;
             this.btnDelete.Text = "&Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnUpdate.Location = new System.Drawing.Point(613, 149);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(94, 29);
+            this.btnUpdate.Size = new System.Drawing.Size(94, 40);
             this.btnUpdate.TabIndex = 27;
             this.btnUpdate.Text = "&Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.Fuchsia;
             this.btnCancel.Location = new System.Drawing.Point(903, 20);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 29);
+            this.btnCancel.Size = new System.Drawing.Size(94, 45);
             this.btnCancel.TabIndex = 26;
             this.btnCancel.Text = "&Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAddOrderDetail
             // 
+            this.btnAddOrderDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnAddOrderDetail.Location = new System.Drawing.Point(498, 149);
             this.btnAddOrderDetail.Name = "btnAddOrderDetail";
-            this.btnAddOrderDetail.Size = new System.Drawing.Size(94, 29);
+            this.btnAddOrderDetail.Size = new System.Drawing.Size(94, 40);
             this.btnAddOrderDetail.TabIndex = 25;
             this.btnAddOrderDetail.Text = "&Add";
-            this.btnAddOrderDetail.UseVisualStyleBackColor = true;
+            this.btnAddOrderDetail.UseVisualStyleBackColor = false;
             this.btnAddOrderDetail.Click += new System.EventHandler(this.btnAddOrderDetail_Click);
             // 
             // txtDiscount
@@ -191,6 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1138, 507);
             this.Controls.Add(this.dgvOrderDetailList);
             this.Controls.Add(this.btnDelete);

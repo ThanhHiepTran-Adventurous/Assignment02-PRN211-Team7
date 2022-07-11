@@ -17,8 +17,6 @@ namespace DataAccess.Repository
 
         public void DeleteOrder(int orderId) => OrderDAO.Instance.DeleteOrder(orderId);
 
-
-
         public Order GetOrderById(int orderId) => OrderDAO.Instance.GetOrderById(orderId);
 
         public Order GetOrderByMemberId(int memberId)
@@ -26,7 +24,9 @@ namespace DataAccess.Repository
             return OrderDAO.Instance.GetOrderByMemberId(memberId);
         }
 
-
         public IEnumerable<Order>? getOrderDetail(int memberId) => OrderDAO.Instance.GetOrderListByMemId(memberId);
+
+        public IEnumerable<Order> GetSaleReportList(DateTime orderDate, DateTime shippedDate) => OrderDAO.Instance.GetSaleReportList(orderDate, shippedDate);
+
     }
 }

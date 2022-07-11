@@ -129,14 +129,14 @@
             this.cbxProductChoice.FormattingEnabled = true;
             this.cbxProductChoice.Location = new System.Drawing.Point(138, 105);
             this.cbxProductChoice.Name = "cbxProductChoice";
-            this.cbxProductChoice.Size = new System.Drawing.Size(151, 28);
+            this.cbxProductChoice.Size = new System.Drawing.Size(180, 28);
             this.cbxProductChoice.TabIndex = 11;
             // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(274, 251);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 29);
+            this.btnSave.Size = new System.Drawing.Size(94, 42);
             this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@
             // 
             this.btnClose.Location = new System.Drawing.Point(527, 251);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(94, 29);
+            this.btnClose.Size = new System.Drawing.Size(94, 42);
             this.btnClose.TabIndex = 13;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -156,6 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(855, 353);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);

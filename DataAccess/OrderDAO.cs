@@ -37,6 +37,23 @@ namespace DataAccess
             orders = dBContext.Orders.ToList();
             return orders;
         }
+
+       public IEnumerable<Order> GetSaleReportList(DateTime orderDate, DateTime shippedDate)
+        {
+            var list = new List<Order>();
+            try
+            {
+                using SalesManagementDBContext dBContext = new SalesManagementDBContext();
+                list = dBContext.Orders.Where(o => o.OrderDate >= orderDate && o.ShippedDate <= shippedDate).ToList();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return list;
+        }
+
+
         //-----------------------------------------------------------------
         public void DeleteOrder(int orderId)
         {
@@ -117,6 +134,11 @@ namespace DataAccess
             }
             return null;
         }
+
+        //public IEnumerable<Order> GetSaleReport(DateTime orderDate, DateTime shippedDate)
+        //{
+
+        //} 
 
     }
 }

@@ -14,14 +14,14 @@ namespace DataAccess.Repository
 
         void UpdateOrder(Order order);
 
-
         Order GetOrderById(int orderId);
 
         void DeleteOrder(int orderId);
 
         Order GetOrderByMemberId(int memberId);
 
-
         IEnumerable<Order>? getOrderDetail(int memberId);
+
+        IEnumerable<Order> GetSaleReportList(DateTime orderDate, DateTime shippedDate);
     }
 }

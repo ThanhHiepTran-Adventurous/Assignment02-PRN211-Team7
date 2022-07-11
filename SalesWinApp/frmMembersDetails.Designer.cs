@@ -178,10 +178,11 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // frmMembersDetail
+            // frmMembersDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1222, 475);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
@@ -199,7 +200,7 @@
             this.Controls.Add(this.txtRoleName);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtMemberId);
-            this.Name = "frmMembersDetail";
+            this.Name = "frmMembersDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMembersDetail";
             this.Load += new System.EventHandler(this.frmMembersDetail_Load);
