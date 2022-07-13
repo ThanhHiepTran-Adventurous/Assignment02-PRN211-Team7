@@ -191,7 +191,7 @@
             // 
             this.btnViewOrderDetail.Location = new System.Drawing.Point(441, 345);
             this.btnViewOrderDetail.Name = "btnViewOrderDetail";
-            this.btnViewOrderDetail.Size = new System.Drawing.Size(175, 29);
+            this.btnViewOrderDetail.Size = new System.Drawing.Size(175, 40);
             this.btnViewOrderDetail.TabIndex = 16;
             this.btnViewOrderDetail.Text = "View Detail Order";
             this.btnViewOrderDetail.UseVisualStyleBackColor = true;
